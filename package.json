@@ -1,0 +1,40 @@
+{
+  "name": "va-vista-browser-automation",
+  "version": "1.0.0",
+  "description": "Browser automation for VA VistA — automate veteran appointment scheduling, clinical note entry, lab result retrieval, and prescription management in the VA health system without the legacy CPRS API.",
+  "main": "src/actions.js",
+  "scripts": {
+    "start": "node examples/basic-login.js",
+    "start:cloud": "node examples/anchor-cloud.js",
+    "test": "node -e \"require('./src/auth'); require('./src/actions'); require('./src/utils'); console.log('✓ All modules load correctly')\""
+  },
+  "keywords": [
+    "va-vista",
+    "veterans-affairs",
+    "cprs-automation",
+    "government-healthcare",
+    "ehr-automation",
+    "browser-automation",
+    "puppeteer",
+    "playwright",
+    "anchorbrowser",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "dotenv": "^16.0.0",
+    "otpauth": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Browser-Automation-Hub/va-vista-browser-automation.git"
+  },
+  "homepage": "https://github.com/Browser-Automation-Hub/va-vista-browser-automation#readme",
+  "bugs": {
+    "url": "https://github.com/Browser-Automation-Hub/va-vista-browser-automation/issues"
+  }
+}
